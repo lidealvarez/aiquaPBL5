@@ -1,4 +1,4 @@
-name: Build
+pname: Build
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-          SONAR_PROJECT_KEY: "aiqua" 
+          SONAR_PROJECT_KEY: "pbl5" 
           
       # Si deseas fallar el trabajo cuando la Puerta de Calidad (Quality Gate) esté roja, descomenta las siguientes líneas
       # Esto generalmente se usa para evitar un despliegue si la calidad del código no es aceptable
