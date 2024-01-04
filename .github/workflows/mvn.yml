@@ -35,4 +35,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=pbl5 -Dsonar.projectName='pbl5' -f /Users/lidealvarez/MU_3/GitLide/demo
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=pbl5 -Dsonar.projectName='pbl5' -f /Users/lidealvarez/MU_3/GitLide/demo/pom.xml
