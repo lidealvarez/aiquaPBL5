@@ -23,4 +23,3 @@ jobs:
       with:
         host: ${{ secrets.SONAR_HOST_URL }}
         login: ${{ secrets.SONAR_TOKEN }}
-        options: -Dsonar.java.binaries=BattleShip/target
