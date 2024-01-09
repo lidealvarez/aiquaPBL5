@@ -23,11 +23,11 @@ jobs:
         distribution: 'adopt'
         java-version: '17'
 
+    - name: Create SonarQube properties file
+      run: echo "sonar.java.binaries=**/target/classes" > sonar-project.properties
+
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@v1.2.0
       with:
         host: ${{ secrets.SONAR_HOST_URL }}
         login: ${{ secrets.SONAR_TOKEN }}
-        options: -Dsonar.java.binaries=**/target/classes
-
-
